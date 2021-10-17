@@ -1,0 +1,29 @@
+{
+  "name": "luoye-npmtest",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "types": "build/types/index.d.ts",
+  "scripts": {
+    "clean":"rm -rf build",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:typings",
+    "build:cjs":"tsc --module commonjs --outDir build/cjs",
+    "build:esm":"tsc --module esnext --outDir build/es",
+    "build:typings":"tsc --outDir build/types --declaration --emitDeclarationOnly",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengluoX/npmTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengluoX/npmTest/issues"
+  },
+  "homepage": "https://github.com/fengluoX/npmTest#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
