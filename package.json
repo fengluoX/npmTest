@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "main": "build/cjs/index.js",
   "module": "build/es/index.js",
-  "types": "build/es/index.d.ts",
+  "types": "build//types/index.d.ts",
   "scripts": {
     "clean": "rm -rf build",
     "build": "npm run clean && rollup -c && npm run build:typings",
