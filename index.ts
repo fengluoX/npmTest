@@ -1,3 +1,7 @@
-export default function(){
-    return 'Hello world';
+#!/usr/bin/env node
+
+const arr = function () {
+  console.log("Hello world");
 }
+
+arr();
