@@ -1,10 +1,7 @@
 {
-  "name": "@test-group/cli",
-  "version": "1.0.0",
+  "name": "@test-group/ui",
+  "version": "1.0.1",
   "description": "",
-  "bin": {
-    "log": "./dist/cjs/index.js"
-  },
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist//types/index.d.ts",
@@ -23,6 +20,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.0.13",
+    "@types/react-dom": "^18.0.5",
     "typescript": "^4.7.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
